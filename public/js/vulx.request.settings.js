@@ -93,6 +93,8 @@ function getProfile() {
             document.getElementById("valorantTitle").textContent = await getTitleText(data.playerTitleId);
                 window.playerTitleId = data.playerTitleId;
 
+			$('body').localize();
+
         }).catch(function(error) {
         console.log(error);
     });
