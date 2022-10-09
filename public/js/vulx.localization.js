@@ -8,8 +8,7 @@ $(function () {
 		preload: ['en', 'de'],
 		debug: false,
 		fallbackLng: ['en', 'de'],
-		ns: ["en"],
-		defaultNS: ['en', 'de'],
+		ns: ["en-AU"],
 		backend: {
 			loadPath: loadPath
 		}
