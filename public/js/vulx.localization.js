@@ -1,4 +1,4 @@
-const loadPath = `/locales/{{lng}}/{{ns}}.lang`;
+const loadPath = `/locales/{{lng}}/{{ns}}.json`;
 
 $(function () {
 	i18next
