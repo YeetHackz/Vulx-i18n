@@ -5,10 +5,10 @@ $(function () {
 	  .use(i18nextBrowserLanguageDetector)
 	  .use(i18nextHttpBackend)
 	  .init({
-		preload: ['en', 'de'],
-		debug: false,
-		fallbackLng: ['en', 'de'],
-		ns: ["en-AU"],
+		debug: true,
+		fallbackLng: 'en',
+		ns: ["default"],
+		defaultNS: "default",
 		backend: {
 			loadPath: loadPath
 		}
