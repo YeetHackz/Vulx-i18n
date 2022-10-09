@@ -14,12 +14,11 @@ fetch("http://127.0.0.1:/userSession").then(function(response) {
     console.log("Error loading user session");
 });
 
-let languageSelection = 'english';
 let discordRpc = false;
 let testFeatures = false;
+let languageSelection = undefined;
 
-function stepOne(value) {
-    languageSelection = value;
+function stepOne() {
     document.getElementById("welcomeStepOne").style.display = "none";
     document.getElementById("welcomeStepTwo").style.display = "flex";
 }
@@ -50,10 +49,10 @@ function postSettings() {
             {
                 updateType: "settingsWelcome",
                 firstLaunch: false,
+                languageSelection: "english",
                 data: {
                     discordRpc: discordRpc,
-                    testFeatures: testFeatures,
-                    languageSelection: languageSelection
+                    testFeatures: testFeatures
                 }
             }
         )

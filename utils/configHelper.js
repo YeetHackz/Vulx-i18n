@@ -164,7 +164,7 @@ class Helper {
 			experimental: false,
 			firstLaunch: true,
 			webTooltips: true,
-			languageSelection: 'english',
+			languageSelection: "english"
 		}
 	
 		await fs.writeFileSync(vulxConfigPath + "vulx.json", JSON.stringify(config));

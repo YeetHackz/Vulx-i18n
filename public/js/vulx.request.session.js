@@ -5,10 +5,6 @@
  * Written by Vulx Team <vulxdev@gmail.com>, 2022
 */
 
-let translationFiles = [
-    "../translations/de.js"
-]
-
 fetch("http://127.0.0.1:/userSession").then(function(response) {
     return response.json();
     }).then(function(data) {
@@ -30,18 +26,13 @@ fetch("http://127.0.0.1:/userSession").then(function(response) {
                 });
               }); 
         }
-        if(data.config.languageSelection == 'english') {
-            console.log("Language: English");
-            //Do nothing. Language is defaulted to english
-        }
-        else if (data.config.languageSelection == 'german') {
-            console.log("Language: German");
-            var translateDE = document.createElement('script');
-            translateDE.src = translationFiles[0];
-            document.head.appendChild(translateDE);
+        if(data.config.languageSelection == 'en') {
+            i18next.changeLanguage('en');
+            console.log("Language is set to default language")
         }
         else {
-            console.log("Can't detect selected Language. Something broke?")
+            i18next.changeLanguage(data.config.languageSelection);
+            console.log("Language is set to: " + data.config.languageSelection)
         }
         //grabs and sets the session data
         document.getElementById("username").textContent = data.session.game_name + "#" + data.session.game_tag;
@@ -56,7 +47,6 @@ fetch("http://127.0.0.1:/userSession").then(function(response) {
         document.getElementById("experimentalFeatures").value = data.config.experimental;
         document.getElementById("webTooltips").value = data.config.webTooltips;
         document.getElementById("languageSelection").value = data.config.languageSelection;
-        console.log(data.config.languageSelection)
     }).catch(function() {
     console.log("Error.");
 });
