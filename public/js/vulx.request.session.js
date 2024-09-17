@@ -26,6 +26,14 @@ fetch("http://127.0.0.1:/userSession").then(function(response) {
                 });
               }); 
         }
+        if(data.config.languageSelection == 'en') {
+            i18next.changeLanguage('en');
+            console.log("Language is set to default language")
+        }
+        else {
+            i18next.changeLanguage(data.config.languageSelection);
+            console.log("Language is set to: " + data.config.languageSelection)
+        }
         //grabs and sets the session data
         document.getElementById("username").textContent = data.session.game_name + "#" + data.session.game_tag;
         document.getElementById("usernameNav").textContent = data.session.game_name + "#" + data.session.game_tag;
@@ -38,6 +46,7 @@ fetch("http://127.0.0.1:/userSession").then(function(response) {
         document.getElementById("discordRpc").value = data.config.discordRpc;
         document.getElementById("experimentalFeatures").value = data.config.experimental;
         document.getElementById("webTooltips").value = data.config.webTooltips;
+        document.getElementById("languageSelection").value = data.config.languageSelection;
     }).catch(function() {
     console.log("Error.");
 });

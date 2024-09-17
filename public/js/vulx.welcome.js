@@ -16,6 +16,7 @@ fetch("http://127.0.0.1:/userSession").then(function(response) {
 
 let discordRpc = false;
 let testFeatures = false;
+let languageSelection = undefined;
 
 function stepOne() {
     document.getElementById("welcomeStepOne").style.display = "none";
@@ -48,6 +49,7 @@ function postSettings() {
             {
                 updateType: "settingsWelcome",
                 firstLaunch: false,
+                languageSelection: "english",
                 data: {
                     discordRpc: discordRpc,
                     testFeatures: testFeatures

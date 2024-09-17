@@ -1,0 +1,109 @@
+{
+	"loading": {
+		"profile": "Lade Profil..."
+	},
+	"input": {
+		"searchFriends": "Suche Freunde..."
+	},
+	"navbar": {
+		"presence": "Präsenz",
+		"settings": "Einstellungen",
+		"sessionStats": "Sitzungsstatistik",
+		"experimental": "Experimental"
+	},
+	"tooltip": {
+		"banner": "Damit können Sie Ihre Valorant-Karte ändern.",
+		"activity": "Damit können Sie Ihre Valorant-Aktivität ändern.",
+		"availableActivity": "Ändert Ihre Aktivität zu 'Verfügbar' (entfernt den benutzerdefinierten Status).",
+		"onlineActivity": "Ändert Ihre Aktivität zu 'Online' (Anzeige des benutzerdefinierten Status).",
+		"awayActivity": "Ändert Ihre Aktivität zu 'Abwesend' (entfernt den benutzerdefinierten Status).",
+		"streamActivity": "Ändert Ihre Aktivität zu 'Streamer' (Kein Text, Nur Lila Visual).",
+		"dndActivity": "Ändert Ihre Aktivität zu 'Nicht stören' (wird als 'Falsche Version' angezeigt).",
+		"offlineActivity": "Ändert Ihre Aktivität zu 'Offline' (wirst als Offline angezeigt aka. 'Unsicherbar').",
+		"title": "Anmerkung: Dieser Wert wird nur für Freunde angezeigt, die nicht in Ihrer Gruppe sind (er wird NICHT auf Ihrem Client angezeigt!).",
+		"level": "Anmerkung: Dieser Wert wird nur für Freunde angezeigt, die nicht in Ihrer Gruppe sind (er wird NICHT auf Ihrem Client angezeigt!).",
+		"systemMessage": "Dadurch wird eine Systemnachricht in ihre Party geschickt (nur auf Client-Seite).",
+		"noRank": "Mit dieser Funktion können Sie Ihren Rang vollständig auf Ihrem Profil entfernen.",
+		"specialRank": "Dieser Rang ist normalerweise nicht verfügbar."
+	},
+	"activity": {
+		"available": "Verfügbar",
+		"online": "Online",
+		"away": "Abwesend",
+		"stream": "Stream",
+		"dnd": "Beschäftigt",
+		"offline": "Offline"
+	},
+	"highlight": {
+		"statistics": "Statistik",
+		"friends": "Freunde",
+		"requests": "Anfragen",
+		"timeElapsed": "Verstrichene Zeit"
+	},
+	"rankInfo": {
+		"rank": "Rank"
+	},
+	"status": {
+		"status": "Status",
+		"profileStatus": "Profil Status",
+		"profileStatusPlaceholder": "Geben Sie einen Text ein...",
+		"scoreAlly": "Punkte Freunde",
+		"scoreAllyPlaceholder": "Gib eine Nummer ein...",
+		"scoreEnemy": "Punkte Feind",
+		"scoreEnemyPlaceholder": "Gib eine Nummer ein..."
+	},
+	"account": {
+		"account": "Status",
+		"title": "Profil Titel",
+		"leaderboard": "Bestenliste",
+		"leaderboardPlaceholder": "Geben Sie eine Zahl ein, die Ihre Position sein soll...",
+		"level": "Account Level",
+		"levelPlaceholder": "Gib eine Nummer ein..."
+	},
+	"systemMessage": {
+		"systemMessage": "System Nachricht",
+		"message": "Nachricht",
+		"messagePlaceholder": "Geben Sie einen Text ein..."
+	},
+	"placeholder": {
+		"noUserFound": "Valorant Player"
+	},
+	"advertising": {
+		"text": "Gemacht mit ♡ von"
+	},
+	"footer": {
+		"text": "Vulx Profil Editor - Gemacht mit ♡ von"
+	},
+	"debugModal": {
+		"sessionDebug": "Sitzungs-Debug",
+		"close": "Schließen"
+	},
+	"settings": {
+		"settings": "Account Einstellungen",
+		"close": "Schließen",
+		"save": "Speichern.",
+		"experimental": "Experimentelle Funktionen",
+		"discord": "Discord Status",
+		"tooltips": "Tool-Tipps",
+        "languageSelection": "Sprache",
+		"english": "English",
+		"german": "German",
+		"yes": "Ja",
+		"no": "Nein",
+		"reset": "Zurücksetzen"
+	},
+	"ranks": {
+		"norank": "Kein Rank",
+		"special": "Spezial",
+		"unranked": "Ungewertet",
+		"iron": "Eisen",
+		"bronze": "Bronze",
+		"silver": "Silber",
+		"gold": "Gold",
+		"platinum": "Platinum",
+		"diamond": "Diamant",
+		"ascendant": "Aufgestiegener",
+		"immortal": "Unsterblicher",
+		"radiant": "Radiant"
+	}
+}
